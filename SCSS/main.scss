@@ -12,3 +12,18 @@
 @import './pages/contact';
 @import './pages/home';
 @import './pages/projects';
+
+body {
+    font-family: $fontFamily;
+    background-color: $primaryColor;
+    height: 100vh;
+    line-height: 1;
+    color: $textColor;
+}
+a {
+    color: $textColor;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-weight: 400;
+}

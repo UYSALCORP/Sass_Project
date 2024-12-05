@@ -1,0 +1,33 @@
+//! NAV-BAR
+.nav {
+    border: 2px solid red;
+    height: 10vh;
+    padding: 1rem;
+        // Ampersant işareti arada boşluk bırakmıyor ya nav geliyo. nav__list yapmış oluyoruz.
+    &__list {
+        list-style-type: none;
+        text-align: right;
+    }
+
+    &__item {
+        display: inline;
+        padding: 1rem;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: $fontFamily;
+        font-weight: 500;
+        @include soft(1s);
+
+        &:hover {
+            color: blue;
+        }
+
+        &--active{
+            color: $secondaryColor;
+        }
+    }
+}

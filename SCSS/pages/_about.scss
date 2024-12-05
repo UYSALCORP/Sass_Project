@@ -1,7 +1,11 @@
 //! ABOUT PAGE
+
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
 .about-bgImg-container {
     // border: 2px solid red;
-    @include bgImg(50vh, $pathName1);
+    @include mixins.bgImg(50vh, variables.$pathName1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,7 +15,7 @@
         margin-bottom: 2rem;
         h2{
             font-size: 3rem;
-            color: $secondaryColor;
+            color: variables.$secondaryColor;
         }
         p{
             font-size: 1.2rem;
@@ -28,8 +32,8 @@
     &__job{
         // border: 2px solid red;
         margin: 1rem;
-        background-color: lighten($primaryColor, 10%);
-        border-bottom: 5px solid $secondaryColor;
+        background-color: lighten(variables.$primaryColor, 10%);
+        border-bottom: 5px solid variables.$secondaryColor;
         padding: 1rem;
         h2,h3{
             margin: 0.5rem 0;

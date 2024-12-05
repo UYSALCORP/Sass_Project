@@ -1,4 +1,8 @@
 //! NAV-BAR
+
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
 .nav {
     // border: 2px solid red;
     height: 10vh;
@@ -18,16 +22,16 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.3rem;
-        font-family: $fontFamily;
+        font-family: variables.$fontFamily;
         font-weight: 500;
-        @include soft(1s);
+        @include mixins.soft(1s);
 
         &:hover {
             color: blue;
         }
 
         &--active{
-            color: $secondaryColor;
+            color: variables.$secondaryColor;
         }
     }
 }

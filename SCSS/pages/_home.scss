@@ -1,7 +1,10 @@
 //! HOME PAGE
 
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
 .home-bgImg-container{
-    @include bgImg(100vh, $pathName1);
+    @include mixins.bgImg(100vh, variables.$pathName1);
 }
 
 .home{
@@ -16,7 +19,7 @@
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid $textColor;
+        border-bottom: 2px solid variables.$textColor;
         width: 100%;
 
         &--last{

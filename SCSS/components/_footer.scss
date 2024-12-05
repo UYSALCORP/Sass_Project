@@ -40,3 +40,17 @@ footer.vertical{
         writing-mode: vertical-lr; // Bu da döndürme opsiyon
     }
 }
+
+footer.middle{
+    // border: 2px solid red;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    @extend .link-style;
+    .copyright2{
+        margin-top: 1rem;
+    }
+}
